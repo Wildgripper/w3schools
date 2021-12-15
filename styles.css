@@ -16,3 +16,17 @@ p {
     padding: 30px;
     margin: 50px;
 }
+
+button {
+    margin: 20px;
+}
+
+a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    margin: 20px;
+    text-decoration: none;
+    display: inline-block;
+}
