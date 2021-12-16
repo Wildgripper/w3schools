@@ -1,38 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-
-    <title>Title</title>
-    <style>
-        #myHeader {
-            background-color: lightblue;
-            color: black;
-            padding: 40px;
-            text-align: center;
-        }
-        .city {
-            background-color: tomato;
-            color: white;
-            padding: 10px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 
 <body>
-    <!-- An element with a unique id -->
-    <h1 id="myHeader">My Cities</h1>
-
-    <!-- Multiple elements with same class -->
-    <h2 class="city">London</h2>
-    <p>London is the capital of England.</p>
-
-    <h2 class="city">Paris</h2>
-    <p>Paris is the capital of France.</p>
-
-    <h2 class="city">Tokyo</h2>
-    <p>Tokyo is the capital of Japan.</p>
-
+    <h2>Using The id Attribute in JavaScript</h2>
+    <p>JavaScript can access an element with a specified id by using the getElementById() method:</p>
+    <h1 id="myHeader">Hello World!</h1>
+    <button onclick="displayResult()">Change text</button>
+    <script>
+        let x = document.getElementById("myHeader");
+        function displayResult() {
+            x.innerHTML = "New text"
+        }
+    </script>
 </body>
 
 </html>
