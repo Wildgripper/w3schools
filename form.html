@@ -7,19 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>Checkboxes</h2>
-    <p>The <strong>input type="checkbox"</strong> defines a checkbox:</p>
+  <h1>The form novalidate attribute</h1>
+  <p>The novalidate attribute indicates that the form input is not to be validated on submit:</p>
 
-    <form action="">
-        <input type="checkbox" id="bike" name="vehicle1" value="Bike">
-        <label for="bike">I have a bike</label><br>
-        <input type="checkbox" id="car" name="vehicle2" value="Car">
-        <label for="bike">I have a car</label><br>
-        <input type="checkbox" id="boat" name="vehicle3" value="Boat">
-        <label for="bike">I have a boat</label><br><br>
-        <input type="submit" value="Submit">
-    </form>
+  <form action="/action_page.php" novalidate>
+      <label for="email">Enter your email:</label>
+      <input type="text" id="email" name="email"><br><br>
+      <input type="submit">
+  </form>
 
+  <p><strong>Note: </strong>The novalidate attribute of the form tag is not supported in Safari 10 (or earlier).</p>
     
 </body>
 </html>
